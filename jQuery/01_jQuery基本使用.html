@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.2.0.js"></script>
+    <script>
+        <!--第一种使用方式-->
+        //        $(document).ready(function () {
+        //            $("#btnClick").click(function () {
+        //                $("div").hide();
+        //            })
+        //        });
+
+        /**
+         * 第二种使用方式
+         */
+        $(function () {
+            $("#btnClick").click(function () {
+                $("div").hide();
+            })
+
+        })
+    </script>
+</head>
+<body>
+
+
+<input type="button" value="点击" id="btnClick">
+
+<div style="width: 200px; height: 200px; background:red; text-align: center;">点击按钮我将会消失</div>
+
+
+</body>
+</html>
