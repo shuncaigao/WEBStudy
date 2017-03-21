@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="jquery-3.2.0.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            /**
+             * id 选择器 多个属性用对象添加样式
+             */
+//            $("#li3").css({"background": "green", "font-size": "5em"});
+            /**
+             * class 选择器 只要一个属性
+             */
+//            $(".li1").css("background", "red");
+
+            /**
+             *  选取所有元素将其隐藏
+             */
+//            $("button").click(function () {
+//                $("*").hide();
+//            });
+
+            /**
+             *  class.xxx选取内容
+             */
+
+//            $("button").click(function () {
+//                $("p.intro").hide();
+//            });
+
+            /**
+             *  p:first 选取p的第一个元素
+             */
+//            $("button").click(function () {
+//                $("p:first").hide();
+//            });
+
+            /**
+             * ul li:first 选取第一个ul 的第一个li元素
+             */
+//            $("button").click(function () {
+//                $("ul li:first").hide();
+//            })
+            /**
+             * ul li:first-child 选取每个ul中的li的首个元素
+             */
+//            $("button").click(function () {
+//                $("ul li:first-child").hide();
+//            })
+            /**
+             * 选取带有某个属性的所有元素
+             */
+//            $("button").click(function () {
+//                $("[href]").hide();
+//            })
+
+            /**
+             * 选取所有target属性值为"_blank"元素
+             */
+//            $("button").click(function () {
+//                $("a[target='_blank']").hide();
+//            })
+
+            /**
+             *  选取所有属性不等于"_blank"的a原色
+             */
+//            $("button").click(function () {
+//                $("a[target!='_blank']").hide();
+//            })
+
+            /**
+             * 选取所有type="button"的<input>元素和<button>元素
+             */
+//            $("button").click(function () {
+//                $(":button").hide();
+//            })
+
+            /**
+             * 选取偶数位置的<tr>元素   使用样式之一添加一种
+             */
+//            $("tr:even").css("background-color", "yellow");
+
+            /**
+             * 选取奇数位置的<tr>元素    使用样式之二添加多种则用字典
+             */
+            $("tr:odd").css({"background-color": "yellow", "font-size": "2em"});
+        })
+    </script>
+
+
+</head>
+<body>
+
+
+<ul>
+    <li class="li1">li1</li>
+    <li>li2</li>
+    <li id="li3">li3</li>
+    <li>li4</li>
+</ul>
+
+
+<ul>
+    <li>Android</li>
+    <li>IOS</li>
+    <li>JAVA</li>
+    <li>Python</li>
+</ul>
+<p class="intro">我是一个P</p>
+<p>我是另外一个P</p>
+
+<p><a href="" target="_blank">这是第一个标签</a></p>
+<p><a href="">这是第二个标签</a></p>
+
+
+<input type="button" value="button"/>
+
+
+<h1>欢迎</h1>
+<table border="1">
+    <tr>
+        <th>网站名</th>
+        <th>网址</th>
+    </tr>
+    <tr>
+        <td>Google</td>
+        <td><a target="_blank" href="http://www.gaocaishun.cn">http://www.google.com</a></td>
+    </tr>
+    <tr>
+        <td>Baidu</td>
+        <td>http://www.baidu.com</td>
+    </tr>
+    <tr>
+        <td>淘宝</td>
+        <td>http://www.taobao.com</td>
+    </tr>
+    <tr>
+        <td>京东</td>
+        <td>http://www.jd.com</td>
+    </tr>
+</table>
+
+
+<br/>
+<button style="font-size: large; color: red">点击事件处理上述</button>
+
+
+</body>
+</html>

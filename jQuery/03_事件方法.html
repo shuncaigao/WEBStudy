@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.2.0.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            /**
+             * 单击
+             */
+//            $("p").click(function () {
+//                $(this).hide();
+//            });
+
+            /**
+             * 双击
+             */
+//            $("p").dblclick(function () {
+//                $(this).hide();
+//            })
+            /**
+             * 鼠标移动到上面
+             */
+//            $("p").mouseenter(function () {
+//                $(this).hide();
+//            });
+            /**
+             * 离开
+             */
+//            $("p").mouseleave(function () {
+//                alert("离开了p标签")
+//            })
+            /**
+             * 按下操作
+             */
+//            $("p").mousedown(function () {
+//                alert("按下操作");
+//            })
+            /**
+             * 点击之后松开
+             */
+//            $("p").mouseup(function () {
+//                alert("按下抬起时");
+//            })
+            /**
+             * 模拟光标悬停事件, 在抑或离开
+             */
+//            $("p").hover(function () {
+//                alert("停留在p标签上")
+//            }, function () {
+//                alert("离开p标签")
+//            })
+
+            /**
+             * 获取焦点
+             */
+//            $("input").focus(function () {
+//                $(this).css("background-color", "#cccccc")
+//            })
+            /**
+             * 当元素失去焦点时
+             */
+
+            $("input").focus(function () {
+                $(this).css("background-color", "#cccccc");
+            });
+
+            $("input").blur(function () {
+                $(this).css("background-color", "#ffffff");
+            })
+
+        });
+
+
+    </script>
+</head>
+<body>
+
+<p>点击我会消失</p>
+
+NAME:<input type="text" placeholder="Please Input PhoneNumber"/><br/><br/>
+TEL:<input type="tel" placeholder="Please Input PhoneNumber"/>
+
+
+</body>
+</html>
