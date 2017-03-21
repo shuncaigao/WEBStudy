@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="jquery-3.2.0.js"></script>
+<script>
+    $(document).ready(function () {
+
+        /**
+         * hide()隐藏
+         */
+//        $("#btn_hide").click(function () {
+//            $("p").hide();
+//        });
+        /**
+         * show()显示
+         */
+//        $("#btn_show").click(function () {
+//            $("p").show();
+//        });
+
+        /**
+         * $(selector).hide(speed,callback);
+         * 可选的 speed 参数规定隐藏/显示的速度，可以取以下值："slow"、"fast" 或毫秒
+         */
+//        $("#btn_hide").click(function () {
+//            $("p").hide(1000);
+//        });
+
+        /**
+         * $(selector).hide(speed,callback);
+         * 可选的 speed 参数规定隐藏/显示的速度，可以取以下值："slow"、"fast" 或毫秒
+         */
+//        $("#btn_show").click(function () {
+//            $("p").show(1000, function () {
+//                alert("完全显示");
+//            });
+//        });
+
+        /**
+         * toggle()显示/隐藏
+         */
+        $("#btn_hide_show").click(function () {
+            $("p").toggle(1000, function () {
+                alert("隐藏/显示");
+            })
+        })
+
+    })
+</script>
+<body>
+
+
+<p>显示和隐藏</p>
+<p>显示和隐藏</p>
+
+<button id="btn_hide">隐藏</button>
+<button id="btn_show">显示</button>
+
+<button id="btn_hide_show">隐藏/显示</button>
+
+
+</body>
+</html>
