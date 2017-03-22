@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="jquery-3.2.0.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            /**
+             * 移除元素
+             */
+//            $("button").click(function () {
+//                $("div").remove();
+//            });
+
+            /**
+             * 移除子元素
+             */
+            $("#remove_child").click(function () {
+                $("div").empty();
+            });
+
+            /**
+             * 移除所有class=p1的属性
+             */
+            $("#remove_all_p").click(function () {
+                $("p").remove(".p1");
+            })
+
+
+        });
+    </script>
+
+
+</head>
+<body>
+
+
+<button>点击</button>
+<button id="remove_child">移除子元素</button>
+
+
+<div style="width: 100px; height: 100px; border: 1px solid black; background-color: red">
+    <p>我是div的子元素 我会消失</p>
+</div>
+
+<p class="p1">1</p>
+<p class="p1">2</p>
+<p class="p1">3</p>
+<button id="remove_all_p">删除所有class=p1属性</button>
+
+</body>
+</html>

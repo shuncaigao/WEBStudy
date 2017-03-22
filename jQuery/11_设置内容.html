@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.2.0.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            /**
+             * 设置元素内容
+             */
+            $("#btn1").click(function () {
+                $("#p1").text("Hello World!");
+            });
+
+            /**
+             * 设置元素内容包括HTML
+             */
+            $("#btn2").click(function () {
+                $("#p2").html("<b>Hello World2!</b>");
+            });
+
+            /**
+             * 设置表单字段值
+             */
+            $("#btn3").click(function () {
+                $("#text").val("www.gaocaishun.cn");
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+
+
+<p id="p1">p1</p>
+<p id="p2">p2</p>
+<p>输入框: <input type="text" id="text" value="顺子技术栈"/></p>
+<button id="btn1">设置文本</button>
+<button id="btn2">设置HTML</button>
+<button id="btn3">设置输入框值</button>
+</body>
+</html>

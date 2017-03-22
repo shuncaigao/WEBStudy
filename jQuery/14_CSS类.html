@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.2.0.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            /**
+             * 添加类
+             * */
+//             $("button").click(function () {
+//                $("h1").addClass("blue");
+//                $("div").addClass("import");
+//            });
+            /**
+             * 移除类
+             */
+//            $("#remove_class").click(function () {
+//                $("h1").removeClass("blue");
+//            });
+            /**
+             * 切换类
+             */
+            $("#toggle_class").click(function () {
+                $("h1").toggleClass("blue");
+            })
+        });
+    </script>
+
+    <style>
+        .import {
+            font-weight: bold;
+            font-size: xx-large;
+            background-color: red;
+
+        }
+
+        .blue {
+            color: blue;
+
+        }
+    </style>
+
+</head>
+<body>
+
+
+<h1>h1</h1>
+<div>这是一个段落</div>
+
+<button>点击添加类</button>
+<button id="remove_class">点击移除类</button>
+<button id="toggle_class">切换类</button>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="jquery-3.2.0.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            /**
+             * 在动画播放的时候停止动画
+             */
+            $("#flip").click(function () {
+                $("#panel").slideDown(5000);
+            });
+
+            //停止动画
+            $("#stop").click(function () {
+                $("#panel").stop();
+            })
+        })
+    </script>
+    <style>
+        #panel, #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: red;
+            border: solid 1px #e7c3c3;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+
+        }
+    </style>
+
+
+</head>
+<body>
+
+<button id="stop">停止动画</button>
+
+<div id="flip">点击向下滑动面板</div>
+
+<div id="panel">Hello world!</div>
+
+</body>
+</html>

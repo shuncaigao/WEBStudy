@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.2.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                //追加文本
+                $("p").append("<b>我实在后面追加文本</b>");
+                //在前面追加
+                $("p").prepend("<b>我是在前面追加的</b>");
+
+                //a前面添加
+                $("a").before("cai");
+
+                //a后面添加
+                $("a").after("shun");
+
+            });
+
+
+        })
+    </script>
+
+
+</head>
+<body>
+
+
+<p>这是一个段落</p>
+
+<a href="jquery-3.2.0.js">顺子技术栈</a>
+
+<button>点击追加</button>
+
+</body>
+</html>

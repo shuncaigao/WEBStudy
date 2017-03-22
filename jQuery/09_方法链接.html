@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="jquery-3.2.0.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            /**
+             * 相同元素上运行多条jQuery命令
+             */
+            $("button").click(function () {
+                $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+            })
+        })
+    </script>
+
+
+</head>
+<body>
+
+
+<p id="p1">www.gaocaishun.cn</p>
+
+<button>点击出现效果</button>
+
+
+</body>
+</html>
