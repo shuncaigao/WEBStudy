@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<style>
+    .descendants * {
+        display: block;
+        border: 2px solid lightcoral;
+        color: lightgreen;
+        padding: 5px;
+        margin: 15px;
+    }
+</style>
+
+<script src="jquery-3.2.0.js"></script>
+<script>
+    $(document).ready(function () {
+        $("div").children().css({
+            "color": "red",
+            "border": "3px solid red"
+        })
+    })
+</script>
+
+
+<body>
+
+
+<div class="descendants" style="width: 500px">
+    <p>子
+        <span>子的子</span>
+    </p>
+</div>
+
+
+</body>
+</html>

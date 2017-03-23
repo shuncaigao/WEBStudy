@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .ancestors * {
+        display: block;
+        border: 2px solid lightblue;
+        color: lightcoral;
+        padding: 5px;
+        margin: 15px;
+    }
+</style>
+<script src="jquery-3.2.0.js"></script>
+<script>
+    $(document).ready(function () {
+
+        /**
+         * 直接父元素
+         */
+//        $("span").parent().css({
+//            "color": "red",
+//            "border": "5px solid red"
+//        });
+        /**
+         * 被选中元素的所有祖元素 一直到HTML
+         */
+//        $("span").parents().css({
+//            "color": "red",
+//            "border": "5px solid red"
+//        });
+
+        /**
+         * 被选中知道指定元素的父元素
+         */
+        $("span").parentsUntil("ul").css({
+            "color": "red",
+            "border": "5px solid red"
+        });
+    });
+</script>
+
+
+<body>
+
+
+<div class="ancestors">
+    <div class="">
+        <ul>
+            <li>
+                <span>span</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+</html>
